@@ -12,7 +12,7 @@ class test(BasePlugin):
     def generate_image(self, settings, device_config):
 
         # get image location
-        image_location = r"C:\Projects\InkyPi\src\plugins\test\georgie.jpg"
+        image_location = self.get_plugin_dir("georgie.jpg")
 
         # Get dimensions
         dimensions = device_config.get_resolution()
